@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import 'party_model.dart';
 import 'guild_hall_roster.dart';
+import 'quest_party_summary.dart';
 
 void main() {
   runApp(
@@ -59,15 +60,7 @@ class GuildHomePage extends StatelessWidget {
           Expanded(
             child: GuildHallRoster(),
           ),
-          SizedBox(
-            height: 120,
-            child: Center(
-              child: Text(
-                'Quest Party Summary Coming Soon!',
-                style: TextStyle(fontSize: 18),
-              ),
-            ),
-          ),
+          QuestPartySummary(),
         ],
       ),
     );
