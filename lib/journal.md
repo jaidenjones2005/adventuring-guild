@@ -85,3 +85,33 @@ party count, total gold cost, and active members.
 
 I also added Dismiss buttons that remove adventurers
 and automatically update the summary.
+
+
+## Phase 5: Validation & Reflection
+
+In this phase, I tested the Adventuring Guild Party
+Builder to verify that shared state updates correctly.
+
+I tested recruiting adventurers, dismissing party
+members, and checking the total party count and
+gold cost.
+
+I also checked how the application handles an
+empty party and duplicate recruitment.
+
+The application uses ChangeNotifier and Provider
+to automatically update the Quest Party Summary
+whenever the party changes.
+
+One important thing I learned was that duplicate
+adventurers can be recruited because the current
+model allows the same adventurer to be added
+multiple times.
+
+I also learned that notifyListeners() is essential
+because it tells Consumer widgets to rebuild
+after the shared data changes.
+
+Overall, this assignment helped me understand
+the difference between local widget state and
+shared application state in Flutter.
